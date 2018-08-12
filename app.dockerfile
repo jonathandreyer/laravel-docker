@@ -1,4 +1,3 @@
-#FROM shakyshane/laravel-php:latest
 FROM php:7.2-fpm-alpine
 
 RUN curl -sS https://getcomposer.org/installer | \
