@@ -11,3 +11,6 @@ RUN composer install --no-dev --no-interaction -o
 RUN chown -R www-data:www-data \
         /var/www/storage \
         /var/www/bootstrap/cache
+
+RUN php artisan key:generate
+RUN php artisan optimize
